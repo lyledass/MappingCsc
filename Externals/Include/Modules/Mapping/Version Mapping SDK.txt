@@ -1,0 +1,79 @@
+VERSIONS DU SDK
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v3.0.5	USE : MAPPING_SDK_V3_5
+
+Ajout du champ "MAP_CONTRACT_COUNTER_RELOADING" utilisé pour les compteurs sur billets sans contact
+
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v3.0.4	USE : MAPPING_SDK_V3_4
+
+Ajout du champ "MAP_EVENT_VALIDITYTIMEENDDATE, MAP_EVENT_VALIDITYENDTIME" Permet d'avoir la fin validite du contrat
+
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v3.0.3	USE : MAPPING_SDK_V3_3
+
+Ajout du champ "MAP_EVENT_VALIDITYPERIODENDDATE, MAP_EVENT_VALIDITYTIMEFIRSTSTAMP" Permet d'avoir periode de fin validite et le l'heur ede premiere monte
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v3.0.1	USE : MAPPING_SDK_V3_1
+
+Ajout du champ "bAutoValueDisabled" permettant de gérer manuellement le calcul du nombre d'éléments d'un liste
+Projet : 1.0.8 -> Interrop SNCF
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v3.0.0	USE : MAPPING_SDK_V3_0
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v2.0.4	USE : MAPPING_SDK_V2_4
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v2.0.3	USE : MAPPING_SDK_V2_3
+
+Ajout de la propriété bResetToMax
+Projet : Bas-Rhin, Clermont
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v2.0.2	USE : MAPPING_SDK_V2_2
+
+Ajout de la propriété bNullIsFull
+Projet : Bas-Rhin
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v2.0.1	USE : MAPPING_SDK_V2_1
+
+Gestion de la propriété 'Obligatoire'. Si la propriété vaut 'True', et que le champs fait partie d'un bitmap, alors le champ est automatiquement ajouté même s'il n'est pas présent dans le bitmap lue. Exple : à Grenoble, la SNCF ne met pas la structure HolderProfiles dans la structure Porteur (bit correspondant du bitmap à 0). Or la SEMITAG la gère. Il faut donc que le TPV réactive cette structure lorsqu'il voit que le bit est à 0 dans la bitmap générale du fichier Porteur. 
+Projets : Grenoble, Gironde
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v2.0.0	USE : MAPPING_SDK_V2_0
+
+Gestion des mappings dynamique
+Projet : Bouches du Rhône
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v1.0.0	USE : MAPPING_SDK_V1
+VERSION INITIALE.
+Projet : Luxembourg ?
+

@@ -1,0 +1,52 @@
+VERSIONS DU SDK
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v1.0	USE : SMARTCARD_SDK_V1
+VERSION INITIALE.
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v2.0	USE : SMARTCARD_SDK_V2
+
+[SmartCard.h]
+- Ajout des fonctions "ChangePin" et "VerifyPin".
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v3.0	USE : SMARTCARD_SDK_V3
+
+[SmartCard.h]
+- Ajout d'un paramètre booléen à la fonction "Commit". (Ecriture directe
+	ou interpretée par une FAT de la carte)
+- Déclaration et gestion des types de cartes suivants :
+	SC_TYPE_NONE = 0,
+	SC_TYPE_MIFARE,			///< Carte Mifare
+	SC_TYPE_GTML,			///< Carte GTML
+	SC_TYPE_CT2000,			///< Carte CT2000
+	SC_TYPE_MAGNETIQUE,		///< Ticket magnétique
+	SC_TYPE_CD97,			///< Carte CD97
+	SC_TYPE_GTML2,			///< Carte GTML2
+	SC_TYPE_CTS_256,		///< Ticket CTS
+	SC_TYPE_ULMIFARE,		///< Ticket Ultra-Light Mifare
+	SC_TYPE_CTS_512,		///< ADU
+
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v3.1	USE : SMARTCARD_SDK_V3_1
+[CardReader.h]
+- Ajout de la fonction "CardReaderStatus". (Donne l'état actuel de la carte)
+- Ajout de la fonction "CardReaderConfig". (Affiche un dialogue de paramétrage de la cible)
+
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+v4	USE : SMARTCARD_SDK_V4
+[CardReader.h]
+- Ajout de la fonction "CardReaderSAMGetSerial". (Retourne le numéro de SAM utilisé par le lecteur)
+- Passage de l'identifiant du lecteur de carte dans le champ LPARAM des messages WM_CARD_INSERTED et WM_CARD_REMOVED.
+
+[SmartCard.h]
+- Ajout de la fonction "GetATR". (Retourne l'ATR de la carte)
+
